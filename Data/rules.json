@@ -1,0 +1,29 @@
+{
+  "motivate_study": {
+    "conditions": [
+      "user.skip_study == True"
+    ],
+    "actions": [
+      "ai_response = 'Skipping study might hurt your progress. Want me to help you plan a session?'"
+    ],
+    "description": "Encourage user to study when they want to skip"
+  },
+  "encourage_rest": {
+    "conditions": [
+      "user.tired == True"
+    ],
+    "actions": [
+      "ai_response = 'You seem tired. Taking a short break might help you recharge.'"
+    ],
+    "description": "Suggest rest when user is tired"
+  },
+  "test_rule": {
+    "conditions": [
+      "user.mood == 'happy'"
+    ],
+    "actions": [
+      "ai_response = 'Great to see you happy!'"
+    ],
+    "description": "Test rule for happy mood"
+  }
+}
